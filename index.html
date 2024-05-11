@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hero Page</title>
   <link rel="stylesheet" href="./sass/main.css" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <!-- Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 </head>
 
 <body>
@@ -47,9 +53,12 @@
     <!-- Hero Right -->
     <div class="hero-right">
       <div class="right-top">
-
-        
-        <img src="images/3.jpg" alt="noimage" class="rtop-img" />
+        <div class="scroll1">
+          <div><img src="images/1.jpg" alt="noimage" class="rtop-img" /></div>
+          <div><img src="images/2.jpg" alt="noimage" class="rtop-img" /></div>
+          <div><img src="images/3.jpg" alt="noimage" class="rtop-img" /></div>
+          <div><img src="images/4.jpg" alt="noimage" class="rtop-img" /></div>
+        </div>
         <div class="soc-icons">
           <img src="images/youtube.png" alt="#" />
           <img src="images/twitter.png" alt="#" />
@@ -58,5 +67,28 @@
       </div>
     </div>
   </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.scroll1').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        swipe: true,
+        arrows: false,
+        autoplaySpeed: 1000,
+      });
+    });
+  </script>
 </body>
 
+</html>

@@ -35,7 +35,7 @@ body {
 }
 .nav-container nav a {
   font-size: 1.2rem;
-  color: #000000;
+  color: #00d1ff;
 }
 
 .button {
@@ -94,6 +94,11 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
+}
+.hero-right .right-top .scroll1 {
+  display: flex;
+  width: 600px;
+  height: 500px;
 }
 .hero-right .right-top .rtop-img {
   width: 80%;
